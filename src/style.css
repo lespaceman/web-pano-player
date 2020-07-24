@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", Tahoma, Geneva, sans-serif;
+}
+.category-container {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 321px;
+    position: absolute;
+    background: -webkit-linear-gradient(231.39deg,rgba(0,0,0,.051) 2.61%,rgba(0,0,0,.451) 46.91%,rgba(0,0,0,.051) 97.68%);
+    background: linear-gradient(218.61deg,rgba(0,0,0,.051) 2.61%,rgba(0,0,0,.451) 46.91%,rgba(0,0,0,.051) 97.68%);
+}
+.category-container h1 {
+    height: 10vh;
+    margin: 0;
+}
+.category {
+  display: flex;
+  height: 90vh;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+}
+.dropbtn {
+  color: #006aff;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+.category-btn {
+  background-color: #ffffff;
+  margin: 20px;
+  cursor: pointer;
+  padding: 5px 0 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.category-btn .icon {
+  width: 43px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid hsla(0,0%,100%,.4);
+}
+.dropdown-content {
+  position: absolute;
+  left: auto;
+  top: 0px;
+  margin: 0px;
+  right: 0px;
+  bottom: auto;
+  transform: translate(-313px, 24px);
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.items {
+  width: 133px;
+  height: 78px;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  overflow-y: hidden;
+}
+.sub-category img {
+  width: 100%;
+}
+.sub-category {
+  padding: 24px 10px 0;
+}
+.heading {
+  margin: 0 0 8px;
+  border-bottom: 2px solid hsla(0,0%,100%,.4);
+  border-color: #fff;
+}
+.heading span {
+  background-color: #fff;
+  color: #0a0a14;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.title {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  padding: 4px;
+  background-color: rgba(0,0,0,.7);
+}
+label {
+  vertical-align: middle;
+  cursor: pointer;
+}
+.items.active {
+  border-color: #006aff;
+}
+.items.active .title {
+  color: #0a0a14;
+  background-color: #fff;
+}
