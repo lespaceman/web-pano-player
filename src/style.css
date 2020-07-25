@@ -38,7 +38,6 @@ body {
   align-items: center;
   border-radius: 4px;
 }
-
 .category-btn .icon {
   width: 43px;
 }
@@ -51,17 +50,18 @@ body {
 .dropdown-content {
   position: absolute;
   left: auto;
-  top: 0px;
+  top: -4px;
   margin: 0px;
   right: 0px;
   bottom: auto;
   transform: translate(-313px, 24px);
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #fff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: 4px;
 }
 .dropdown-content a {
   color: black;
@@ -95,10 +95,12 @@ body {
 .heading {
   margin: 0 0 8px;
   border-bottom: 2px solid hsla(0,0%,100%,.4);
+}
+.sub-category.active .heading {
   border-color: #fff;
 }
 .heading span {
-  background-color: #fff;
+  background-color: hsla(0,0%,100%,.4);
   color: #0a0a14;
   display: inline-block;
   font-size: 12px;
@@ -107,6 +109,9 @@ body {
   padding: 3px 10px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+.sub-category.active .heading span {
+  background-color: #fff;
 }
 .title {
   position: absolute;
@@ -130,4 +135,63 @@ label {
 .items.active .title {
   color: #0a0a14;
   background-color: #fff;
+}
+.category-title {
+  display: flex;
+  padding: 11.2px 24px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2a2a33;
+  border-bottom: 1px solid rgb(209, 209, 213);
+}
+.category-title img {
+  width: 24px;
+  margin-right: 10px;
+}
+.dropdown-content .item img {
+  width: 24px;
+}
+.main-category-items {
+  margin-top: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 20px;
+}
+.main-category-items .item .tick {
+  background-image: url(/src/assets/icons/tick.svg);
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  display: none;
+}
+.main-category-items .item.active .tick {
+  display: block;
+}
+.main-category-items .item.active .gap {
+  display: none;
+}
+
+.main-category-items .item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0px 8px 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  width: 150px;
+  color: #2a2a33;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.main-category-items .item:hover {
+  background: rgb(213, 243, 249);
+}
+.main-category-items img {
+  margin-right: 8px;
+}
+.main-category-items .gap {
+  width: 32px;
 }
