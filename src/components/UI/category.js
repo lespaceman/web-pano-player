@@ -18,6 +18,5 @@ export default class Category {
         document.querySelector(".dropdown-content").style = "display:none";
       }
     });
-
   }
 }

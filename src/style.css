@@ -173,7 +173,6 @@ label {
 .main-category-items .item.active .gap {
   display: none;
 }
-
 .main-category-items .item {
   display: flex;
   align-items: center;
